@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | Keziah Group Admin Portal</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Presentation build: HTML and CSS only. Sample data is baked into the markup;
+       the live data-driven version is admin-reservations.html (JavaScript next semester). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body class="admin-body">
+  <div class="admin-shell">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="admin-brand">
+        <span class="brand-mark">K</span>
+        <div class="admin-brand-text">
+          <span>Keziah Group</span>
+          <em>Admin Portal</em>
+        </div>
+      </div>
+      <nav class="admin-nav">
+        <a href="admin-dashboard.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Dashboard
+        </a>
+        <a href="admin-reservations.html" class="active" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+          Reservations
+          <span class="nav-count num">6</span>
+        </a>
+        <a href="admin-cms.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          Content Studio
+          <span class="nav-count num">6</span>
+        </a>
+      </nav>
+      <a href="index.html" class="admin-exit">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to Live Site
+      </a>
+    </aside>
+
+    <!-- Main -->
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <h1>Reservations</h1>
+        <div class="topbar-meta">
+          <span class="topbar-date">November 18, 2026</span>
+          <button type="button" class="btn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            Reset Demo Data
+          </button>
+        </div>
+      </header>
+
+      <main class="admin-content">
+        <p class="page-intro">Every booking request from the live site lands here, alongside manually created reservations. Search, filter, and manage each stay from inquiry to checkout.</p>
+
+        <!-- Toolbar -->
+        <section class="panel">
+          <div class="panel-body toolbar">
+            <div class="toolbar-left">
+              <div class="search-box">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <label for="reservation-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search reservations</label>
+                <input type="search" id="reservation-search" placeholder="Search guest name, contact, unit, or booking ID&hellip;" />
+              </div>
+              <div class="status-tabs">
+                <button type="button" class="active">All<span class="tab-count num">6</span></button>
+                <button type="button">Pending<span class="tab-count num">2</span></button>
+                <button type="button">Confirmed<span class="tab-count num">1</span></button>
+                <button type="button">Checked-In / Completed<span class="tab-count num">2</span></button>
+                <button type="button">Cancelled<span class="tab-count num">1</span></button>
+              </div>
+            </div>
+            <button type="button" class="btn solid">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              New Manual Reservation
+            </button>
+          </div>
+        </section>
+
+        <!-- Table -->
+        <section class="panel">
+          <div class="panel-head">
+            <h2>All Reservations</h2>
+          </div>
+          <div class="table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th scope="col">Booking ID</th>
+                  <th scope="col">Client Name &amp; Contact</th>
+                  <th scope="col">Unit Booked</th>
+                  <th scope="col">Check-In / Check-Out</th>
+                  <th scope="col">Guests / Total</th>
+                  <th scope="col">Status</th>
+                  <th scope="col" style="text-align:right">Quick Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-strong num">KG-1005</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Andrea Lim</span>
+                      <span class="cell-muted">+63 929 771 4402</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Shore 3 Courtyard Pool Loft</span>
+                      <span class="cell-muted">SMDC Shore 3 Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Nov 25th, 2026</span>
+                      <span class="cell-muted num">&rarr; Nov 28th, 2026 &middot; 3 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">4 guests</span>
+                      <span class="cell-strong num">&#8369;8,700</span>
+                    </div>
+                  </td>
+                  <td><span class="pill pending">Pending</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn ok" title="Confirm reservation" aria-label="Confirm reservation KG-1005"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Cancel reservation" aria-label="Cancel reservation KG-1005"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1005"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1005"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-strong num">KG-1001</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Maria Santos</span>
+                      <span class="cell-muted">+63 917 845 2210</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Shore 3 Canopy King</span>
+                      <span class="cell-muted">SMDC Shore 3 Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Nov 20th, 2026</span>
+                      <span class="cell-muted num">&rarr; Nov 23rd, 2026 &middot; 3 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">2 guests</span>
+                      <span class="cell-strong num">&#8369;7,800</span>
+                    </div>
+                  </td>
+                  <td><span class="pill pending">Pending</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn ok" title="Confirm reservation" aria-label="Confirm reservation KG-1001"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Cancel reservation" aria-label="Cancel reservation KG-1001"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1001"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1001"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-strong num">KG-1003</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Karla Mendoza</span>
+                      <span class="cell-muted">karla.mendoza@email.com</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Shore 3 Balcony Suite</span>
+                      <span class="cell-muted">SMDC Shore 3 Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Dec 1st, 2026</span>
+                      <span class="cell-muted num">&rarr; Dec 4th, 2026 &middot; 3 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">2 guests</span>
+                      <span class="cell-strong num">&#8369;8,400</span>
+                    </div>
+                  </td>
+                  <td><span class="pill confirmed">Confirmed</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn ok" title="Confirm reservation" aria-label="Confirm reservation KG-1003"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Cancel reservation" aria-label="Cancel reservation KG-1003"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+                      <button type="button" class="icon-btn" title="Mark as checked-in" aria-label="Check in reservation KG-1003"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></button>
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1003"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1003"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-strong num">KG-1002</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Juan Dela Cruz</span>
+                      <span class="cell-muted">+63 918 220 7754</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Field Garden Studio</span>
+                      <span class="cell-muted">SMDC Field Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Nov 14th, 2026</span>
+                      <span class="cell-muted num">&rarr; Nov 18th, 2026 &middot; 4 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">2 guests</span>
+                      <span class="cell-strong num">&#8369;8,800</span>
+                    </div>
+                  </td>
+                  <td><span class="pill checked-in">Checked-In</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn ok" title="Confirm reservation" aria-label="Confirm reservation KG-1002"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></button>
+                      <button type="button" class="icon-btn" title="Mark as completed" aria-label="Complete reservation KG-1002"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></button>
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1002"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1002"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-strong num">KG-1004</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Miguel Torres</span>
+                      <span class="cell-muted">+63 906 553 1188</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Field Wood-Slat Loft</span>
+                      <span class="cell-muted">SMDC Field Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Oct 30th, 2026</span>
+                      <span class="cell-muted num">&rarr; Nov 2nd, 2026 &middot; 3 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">4 guests</span>
+                      <span class="cell-strong num">&#8369;7,500</span>
+                    </div>
+                  </td>
+                  <td><span class="pill completed">Completed</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1004"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1004"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-strong num">KG-1006</td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="cell-strong">Paolo Reyes</span>
+                      <span class="cell-muted">+63 915 664 9021</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span>Field Pool-View Queen</span>
+                      <span class="cell-muted">SMDC Field Residences</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">Oct 10th, 2026</span>
+                      <span class="cell-muted num">&rarr; Oct 12th, 2026 &middot; 2 nights</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="cell-person">
+                      <span class="num">2 guests</span>
+                      <span class="cell-strong num">&#8369;4,800</span>
+                    </div>
+                  </td>
+                  <td><span class="pill cancelled">Cancelled</span></td>
+                  <td>
+                    <div class="cell-actions">
+                      <button type="button" class="icon-btn" title="Edit reservation" aria-label="Edit reservation KG-1006"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+                      <button type="button" class="icon-btn warn" title="Delete reservation" aria-label="Delete reservation KG-1006"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>

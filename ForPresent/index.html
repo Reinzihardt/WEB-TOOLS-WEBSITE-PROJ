@@ -10,6 +10,8 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Presentation build: HTML and CSS only. Interactive behavior (gallery controls,
+       form handling, CMS sync) is added with JavaScript next semester. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -29,6 +31,7 @@
         <a href="#residences">Residences</a>
         <a href="#gallery">Gallery</a>
         <a href="#compare">Compare</a>
+        <a href="admin-dashboard.html" class="nav-admin">Admin Portal</a>
       </nav>
       <a href="#reservation" class="btn-outline">Reserve a Stay &rarr;</a>
     </div>
@@ -72,15 +75,15 @@
       <div class="container residences-grid">
         <article class="residence">
           <div class="residence-media">
-            <img src="./images/SMDClivingarea.jpg" alt="Living area at SMDC Field Residences featuring vertical wood-slat feature wall and plush sofa" />
-            <a href="#reservation" class="round-arrow small" aria-label="Reserve SMDC Field Residences">&rarr;</a>
+            <img src="./images/ResidencesFull.jpg" alt="Field Garden Studio at SMDC Field Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Field Garden Studio">&rarr;</a>
           </div>
           <div class="residence-body">
             <div class="residence-meta">
               <span class="small-caps">Sucat, Para&ntilde;aque City</span>
               <span class="rate">&#8369;2,200 <span class="per">/ night</span></span>
             </div>
-            <h3 class="residence-title">SMDC Field Residences</h3>
+            <h3 class="residence-title">Field Garden Studio</h3>
             <p>Warm wood-slat details, emerald accents, and a tropical courtyard create a polished urban retreat minutes from NAIA.</p>
             <ul class="specs">
               <li><span class="spec-label">Area</span><span class="spec-value">28 m&sup2;</span></li>
@@ -93,15 +96,57 @@
 
         <article class="residence">
           <div class="residence-media">
-            <img src="./images/Shore3BedCanopy.jpg" alt="Master bedroom at SMDC Shore 3 Residences with circular woven canopy and signature neon wall" />
-            <a href="#reservation" class="round-arrow small" aria-label="Reserve SMDC Shore 3 Residences">&rarr;</a>
+            <img src="./images/ResidenceLivingArea.jpg" alt="Field Wood-Slat Loft at SMDC Field Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Field Wood-Slat Loft">&rarr;</a>
+          </div>
+          <div class="residence-body">
+            <div class="residence-meta">
+              <span class="small-caps">Sucat, Para&ntilde;aque City</span>
+              <span class="rate">&#8369;2,500 <span class="per">/ night</span></span>
+            </div>
+            <h3 class="residence-title">Field Wood-Slat Loft</h3>
+            <p>A calm, textural living space with a vertical wood-slat feature wall, ambient neon glow, and a media nook for slow nights in.</p>
+            <ul class="specs">
+              <li><span class="spec-label">Area</span><span class="spec-value">30 m&sup2;</span></li>
+              <li><span class="spec-label">Guests</span><span class="spec-value">2&ndash;4</span></li>
+              <li><span class="spec-label">Wi-Fi</span><span class="spec-value">150 Mbps</span></li>
+              <li><span class="spec-label">Signature</span><span class="spec-value">Wood-slat wall</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="residence">
+          <div class="residence-media">
+            <img src="./images/Field Residences Keziah Group/768962698_1026963896824913_1640508763953979682_n.jpg" alt="Field Pool-View Queen at SMDC Field Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Field Pool-View Queen">&rarr;</a>
+          </div>
+          <div class="residence-body">
+            <div class="residence-meta">
+              <span class="small-caps">Sucat, Para&ntilde;aque City</span>
+              <span class="rate">&#8369;2,400 <span class="per">/ night</span></span>
+            </div>
+            <h3 class="residence-title">Field Pool-View Queen</h3>
+            <p>Wake up to courtyard pool views from a gingham-dressed queen bed, with a study desk and kitchenette for longer stays.</p>
+            <ul class="specs">
+              <li><span class="spec-label">Area</span><span class="spec-value">24 m&sup2;</span></li>
+              <li><span class="spec-label">Guests</span><span class="spec-value">2&ndash;3</span></li>
+              <li><span class="spec-label">Wi-Fi</span><span class="spec-value">150 Mbps</span></li>
+              <li><span class="spec-label">Signature</span><span class="spec-value">Pool view</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="residence">
+          <div class="residence-media">
+            <img src="./images/Shore3BedCanopy.jpg" alt="Shore 3 Canopy King at SMDC Shore 3 Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Shore 3 Canopy King">&rarr;</a>
           </div>
           <div class="residence-body">
             <div class="residence-meta">
               <span class="small-caps">Mall of Asia Complex, Pasay</span>
               <span class="rate">&#8369;2,600 <span class="per">/ night</span></span>
             </div>
-            <h3 class="residence-title">SMDC Shore 3 Residences</h3>
+            <h3 class="residence-title">Shore 3 Canopy King</h3>
             <p>A light-filled high-rise sanctuary with contemporary interiors, a private balcony, and a spectacular multi-pool water park.</p>
             <ul class="specs">
               <li><span class="spec-label">Area</span><span class="spec-value">32 m&sup2;</span></li>
@@ -111,11 +156,56 @@
             </ul>
           </div>
         </article>
+
+        <article class="residence">
+          <div class="residence-media">
+            <img src="./images/Shore3pool.jpg" alt="Shore 3 Courtyard Pool Loft at SMDC Shore 3 Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Shore 3 Courtyard Pool Loft">&rarr;</a>
+          </div>
+          <div class="residence-body">
+            <div class="residence-meta">
+              <span class="small-caps">Mall of Asia Complex, Pasay</span>
+              <span class="rate">&#8369;2,900 <span class="per">/ night</span></span>
+            </div>
+            <h3 class="residence-title">Shore 3 Courtyard Pool Loft</h3>
+            <p>Perched above the lagoon-style pool courtyards, this loft layers woven textures, tropical thatch, and resort-style leisure.</p>
+            <ul class="specs">
+              <li><span class="spec-label">Area</span><span class="spec-value">34 m&sup2;</span></li>
+              <li><span class="spec-label">Guests</span><span class="spec-value">2&ndash;4</span></li>
+              <li><span class="spec-label">Wi-Fi</span><span class="spec-value">200 Mbps</span></li>
+              <li><span class="spec-label">Signature</span><span class="spec-value">Multi-pool deck</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="residence">
+          <div class="residence-media">
+            <img src="./images/Shore3Balcony.jpg" alt="Shore 3 Balcony Suite at SMDC Shore 3 Residences" />
+            <a href="#reservation" class="round-arrow small" aria-label="Reserve Shore 3 Balcony Suite">&rarr;</a>
+          </div>
+          <div class="residence-body">
+            <div class="residence-meta">
+              <span class="small-caps">Mall of Asia Complex, Pasay</span>
+              <span class="rate">&#8369;2,800 <span class="per">/ night</span></span>
+            </div>
+            <h3 class="residence-title">Shore 3 Balcony Suite</h3>
+            <p>A snug suite for two with a private balcony overlooking the Pasay skyline, five minutes from the Mall of Asia arena grounds.</p>
+            <ul class="specs">
+              <li><span class="spec-label">Area</span><span class="spec-value">30 m&sup2;</span></li>
+              <li><span class="spec-label">Guests</span><span class="spec-value">2&ndash;2</span></li>
+              <li><span class="spec-label">Wi-Fi</span><span class="spec-value">200 Mbps</span></li>
+              <li><span class="spec-label">Signature</span><span class="spec-value">City balcony</span></li>
+            </ul>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- 03. Gallery -->
+    <!-- 03. Gallery (CSS-only tabs: hidden radios switch the two photo decks) -->
     <section class="section-stone" id="gallery">
+      <input class="css-tab-state" type="radio" name="gallery-tab" id="gallery-tab-field" checked />
+      <input class="css-tab-state" type="radio" name="gallery-tab" id="gallery-tab-shore" />
+
       <div class="container">
         <div class="section-head">
           <div>
@@ -123,35 +213,62 @@
             <h2 class="display">See yourself here.</h2>
           </div>
           <div class="tabs">
-            <button type="button" class="tab active">Field Residences</button>
-            <button type="button" class="tab">Shore 3 Tower 2</button>
+            <label for="gallery-tab-field" class="tab">Field Residences</label>
+            <label for="gallery-tab-shore" class="tab">Shore 3 Tower 2</label>
           </div>
         </div>
 
-        <figure class="deck-main">
-          <img src="./images/Shore3pool.jpg" alt="Contemporary hotel bathroom with walk-in glass shower, black matte fittings, and illuminated round mirror" />
-          <div class="deck-scrim"></div>
-          <span class="deck-counter">05 / 06</span>
-          <figcaption class="deck-caption">
-            <div>
-              <span class="kicker">Hot Shower &middot; Fresh Towels</span>
-              <h3>Shore 3 Pool</h3>
-            </div>
-            <div class="deck-controls">
-              <button type="button" class="round-btn" aria-label="Previous photograph">&larr;</button>
-              <button type="button" class="round-btn" aria-label="Next photograph">&rarr;</button>
-            </div>
-          </figcaption>
-        </figure>
+        <div class="gallery-view gallery-view-field">
+          <figure class="deck-main">
+            <img src="./images/SMDClivingarea.jpg" alt="Media wall with neon sign and fireplace screen in a Field Residences living area" />
+            <div class="deck-scrim"></div>
+            <span class="deck-counter">01 / 06</span>
+            <figcaption class="deck-caption">
+              <div>
+                <span class="kicker">Media Wall &middot; Fireplace Screen</span>
+                <h3>The Neon Lounge</h3>
+              </div>
+              <div class="deck-controls">
+                <button type="button" class="round-btn" aria-label="Previous photograph">&larr;</button>
+                <button type="button" class="round-btn" aria-label="Next photograph">&rarr;</button>
+              </div>
+            </figcaption>
+          </figure>
+          <ul class="thumbs">
+            <li class="active"><img src="./images/SMDClivingarea.jpg" alt="The Neon Lounge" /></li>
+            <li><img src="./images/Bathroom.jpg" alt="Rain & Chrome" /></li>
+            <li><img src="./images/Field Residences Keziah Group/772177464_27746928598310769_3538866520957420293_n.jpg" alt="Soft Places to Land" /></li>
+            <li><img src="./images/Field Residences Keziah Group/771572526_1922496205095044_3380486222252288733_n.jpg" alt="Morning Coffee Corner" /></li>
+            <li><img src="./images/Field Residences Keziah Group/768554940_2280423522769728_146719134858119705_n.jpg" alt="Sleeps Like a Resort" /></li>
+            <li><img src="./images/Field Residences Keziah Group/768307839_1091947016740290_1710103021768705760_n.jpg" alt="Stocked & Ready" /></li>
+          </ul>
+        </div>
 
-        <ul class="thumbs">
-          <li><img src="./images/Games.jpg" alt="Entertainment room with games" /></li>
-          <li><img src="./images/HeroBgpic.jpg" alt="Bedroom with pool view" /></li>
-          <li><img src="./images/Shore3Balcony.jpg" alt="Shore 3 Balcony view" /></li>
-          <li><img src="./images/ResidenceLivingArea.jpg" alt="Ambient bed lamp" /></li>
-          <li class="active"><img src="./images/Shore3pool.jpg" alt="Bathroom vanity active slide" /></li>
-          <li><img src="./images/ResidencesFull.jpg" alt="Aerial pool courtyard" /></li>
-        </ul>
+        <div class="gallery-view gallery-view-shore">
+          <figure class="deck-main">
+            <img src="./images/Shore 3 Tower 2/766051810_28314050084858963_1056437649114870640_n.jpg" alt="Queen bed beneath the signature Staycation neon sign at Shore 3 Tower 2" />
+            <div class="deck-scrim"></div>
+            <span class="deck-counter">01 / 06</span>
+            <figcaption class="deck-caption">
+              <div>
+                <span class="kicker">Signature Neon &middot; Queen Bed</span>
+                <h3>Staycation Glow</h3>
+              </div>
+              <div class="deck-controls">
+                <button type="button" class="round-btn" aria-label="Previous photograph">&larr;</button>
+                <button type="button" class="round-btn" aria-label="Next photograph">&rarr;</button>
+              </div>
+            </figcaption>
+          </figure>
+          <ul class="thumbs">
+            <li class="active"><img src="./images/Shore 3 Tower 2/766051810_28314050084858963_1056437649114870640_n.jpg" alt="Staycation Glow" /></li>
+            <li><img src="./images/Shore 3 Tower 2/768823553_1070301085512799_5926388324576497862_n.jpg" alt="The Beach Room" /></li>
+            <li><img src="./images/Shore 3 Tower 2/771693777_1076463458398359_4136069903078281382_n.jpg" alt="Slow Evenings" /></li>
+            <li><img src="./images/Shore 3 Tower 2/768679304_1383037170632478_9091691338989067767_n.jpg" alt="Golden Hour Suite" /></li>
+            <li><img src="./images/Shore 3 Tower 2/768576757_2910725872605695_6952919627241142653_n.jpg" alt="Cook-in Convenience" /></li>
+            <li><img src="./images/Shore 3 Tower 2/771843542_1076937381686898_8510821433117670741_n.jpg" alt="Fresh & Functional" /></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -189,7 +306,7 @@
       </div>
     </section>
 
-    <!-- 05. Reservation -->
+    <!-- 05. Reservation (form controls are presentational in this build) -->
     <section class="section-dark" id="reservation">
       <div class="container reservation-grid">
         <div>
@@ -201,10 +318,14 @@
 
         <form class="reservation-form" action="#" method="post">
           <div class="field">
-            <label for="select-property">Select Property</label>
+            <label for="select-property">Select Unit</label>
             <select id="select-property" name="property" required>
-              <option value="field-residences">Field Residences &middot; &#8369;2,200/night</option>
-              <option value="shore-3-residences">SMDC Shore 3 Residences &middot; &#8369;2,600/night</option>
+              <option value="field-garden-studio" selected>Field Garden Studio &middot; &#8369;2,200/night</option>
+              <option value="field-wood-slat-loft">Field Wood-Slat Loft &middot; &#8369;2,500/night</option>
+              <option value="field-pool-view-queen">Field Pool-View Queen &middot; &#8369;2,400/night</option>
+              <option value="shore-3-canopy-king">Shore 3 Canopy King &middot; &#8369;2,600/night</option>
+              <option value="shore-3-courtyard-pool-loft">Shore 3 Courtyard Pool Loft &middot; &#8369;2,900/night</option>
+              <option value="shore-3-balcony-suite">Shore 3 Balcony Suite &middot; &#8369;2,800/night</option>
             </select>
           </div>
           <div class="row-halves">
@@ -217,9 +338,19 @@
               <input type="tel" id="guest-mobile" name="guest_mobile" placeholder="+63 9XX XXX XXXX" required />
             </div>
           </div>
-          <div class="field">
-            <label for="preferred-dates">Preferred Dates</label>
-            <input type="text" id="preferred-dates" name="dates" placeholder="Check-in &mdash; Check-out" required />
+          <div class="row-thirds">
+            <div class="field">
+              <label for="check-in">Check-In</label>
+              <input type="date" id="check-in" name="check_in" required />
+            </div>
+            <div class="field">
+              <label for="check-out">Check-Out</label>
+              <input type="date" id="check-out" name="check_out" required />
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="8" value="2" required />
+            </div>
           </div>
           <button type="submit" class="btn-gold">Request Availability &rarr;</button>
         </form>
@@ -253,7 +384,7 @@
 
         <div class="guidance-grid">
           <article class="feature-card">
-            <img src="/images/guidance_card_main.jpg" alt="Shore 3 Tower 2 interior with woven canopy and warm ambient illumination" />
+            <img src="./images/Shore 3 Tower 2/767945232_1774249997046418_3164012983819070313_n.jpg" alt="Shore 3 Tower 2 bedroom with open wardrobe, standing fan, and woven ceiling fan detail" />
             <div class="feature-body">
               <div class="feature-top">
                 <span class="unit">Shore 3 - Tower 2</span>
@@ -273,11 +404,11 @@
               <p>Bakit ibabakante ang condo unit mo kung pwede naman itong magpasok ng monthly passive income? Panoorin ang kumpletong transformation ng property na ito! Mula sa dating bare concrete finish, ginawa itong turnkey-ready ng Keziah Group at agad na-onboardan ng tenant.</p>
             </div>
             <div class="tile">
-              <img src="/images/guidance_billiard.jpg" alt="Recreation lounge with tournament billiard table" />
+              <img src="./images/Shore 3 Tower 2/764817234_1439947934846393_7141973612724028055_n.jpg" alt="Recreation nook with mini pool table and pampas grass" />
               <span class="badge">&#8601;</span>
             </div>
             <div class="tile">
-              <img src="/images/guidance_hallway.jpg" alt="Turnkey hallway entryway with floor-to-ceiling mirror" />
+              <img src="./images/Shore 3 Tower 2/764550634_2268456940385711_9034622465181755152_n.jpg" alt="Turnkey hallway entryway with floor-to-ceiling mirror and drapery" />
               <span class="badge">&#8599;</span>
             </div>
             <aside class="callout">
@@ -290,7 +421,7 @@
               </ul>
             </aside>
             <div class="tile">
-              <img src="/images/guidance_pool.jpg" alt="Overhead view of crystal resort swimming pool" />
+              <img src="./images/Shore 3 Tower 2/764531179_1577152200723843_4224525762653773561_n.jpg" alt="Overhead view of the Shore 3 resort swimming pool courtyard" />
               <span class="badge right">&#8593;</span>
             </div>
           </div>
@@ -301,11 +432,11 @@
     <!-- 08. Strip -->
     <section class="strip">
       <ul class="strip-grid">
-        <li><img src="/images/strip_1.jpg" alt="Furnished living room with TV console and warm wall art" /></li>
-        <li><img src="/images/strip_2.jpg" alt="Desk workspace with modern decor and calendar" /></li>
-        <li><img src="/images/strip_3.jpg" alt="Entertainment corner with gaming controllers and games" /></li>
-        <li><img src="/images/strip_4.jpg" alt="Light-filled open plan dining space" /></li>
-        <li><img src="/images/strip_5.jpg" alt="Accent neon lounge seating corner" /></li>
+        <li><img src="./images/Shore 3 Tower 2/765262232_1565639328598598_8146226615440787069_n.jpg" alt="Furnished console with green plant wall and media unit" /></li>
+        <li><img src="./images/Shore 3 Tower 2/765854310_1562364878867951_5754192265759222059_n.jpg" alt="Flat lay of board games and entertainment" /></li>
+        <li><img src="./images/Shore 3 Tower 2/766913541_2182149682496487_4691545108049705565_n.jpg" alt="Kitchen dish cabinet with stocked tableware" /></li>
+        <li><img src="./images/Shore 3 Tower 2/767560130_1437800851492750_6921806562521652572_n.jpg" alt="Cookware cabinet with pots and pans" /></li>
+        <li><img src="./images/Field Residences Keziah Group/771379113_1078403004879967_8509299371973973024_n.jpg" alt="Single bed with study desk and mirrored wardrobe" /></li>
       </ul>
     </section>
 
@@ -329,7 +460,7 @@
     <section class="newsletter">
       <div class="container">
         <div class="newsletter-card">
-          <img class="newsletter-bg" src="/images/newsletter_bg.jpg" alt="Atmospheric hotel suite interior" />
+          <img class="newsletter-bg" src="./images/Field Residences Keziah Group/770387571_1041868808552276_2176791805857020544_n.jpg" alt="Staycation neon sign above a lit fireplace screen in a Keziah suite" />
           <div class="newsletter-inner">
             <span class="badge-text">Keep In Touch</span>
             <h2>It's Time For <em>Adventures</em> &amp; Experiences</h2>
