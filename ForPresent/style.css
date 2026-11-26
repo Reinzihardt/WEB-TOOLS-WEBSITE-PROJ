@@ -180,11 +180,12 @@ button {
 
 /* ---------- Header ---------- */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  background-color: var(--ink);
-  border-bottom: 1px solid var(--line);
+  background: transparent;
 }
 .header-inner {
   display: flex;
