@@ -180,9 +180,11 @@ button {
 
 /* ---------- Header ---------- */
 .site-header {
-  position: absolute;
-  inset: 0 0 auto 0;
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 .header-inner {
   display: flex;
@@ -222,6 +224,13 @@ button {
 }
 .nav a:hover {
   color: var(--gold);
+}
+
+#residences,
+#gallery,
+#compare,
+#reservation {
+  scroll-margin-top: 80px;
 }
 
 /* ---------- Hero ---------- */
@@ -1003,6 +1012,12 @@ a.footer-link:hover {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
+  #residences,
+  #gallery,
+  #compare,
+  #reservation {
+    scroll-margin-top: 72px;
+  }
   .nav {
     display: none;
   }
@@ -1273,6 +1288,12 @@ a.footer-link:hover {
     padding: 18px;
     border: 1px solid var(--line);
     background: var(--ink);
+  }
+  body:has(#mobile-nav-toggle:checked) #residences,
+  body:has(#mobile-nav-toggle:checked) #gallery,
+  body:has(#mobile-nav-toggle:checked) #compare,
+  body:has(#mobile-nav-toggle:checked) #reservation {
+    scroll-margin-top: 300px;
   }
   .mobile-nav-toggle:checked ~ .header-menu {
     display: flex;
