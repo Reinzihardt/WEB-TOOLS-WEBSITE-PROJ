@@ -1,0 +1,90 @@
+{
+  "atoms": {
+    "decoration": "sidebar-nav",
+    "fonts": "modern-sans",
+    "layout": "standard",
+    "moods": [
+      "professional"
+    ],
+    "palette": "slate-minimal"
+  },
+  "colors": {
+    "accent": "#c9a96e",
+    "background": "#131210",
+    "border": "#2b2a27",
+    "destructive": "#b4543e",
+    "foreground": "#f1ece1",
+    "muted": "#1b1a17",
+    "muted-foreground": "#9a9488",
+    "on-primary": "#131210",
+    "primary": "#c9a96e",
+    "secondary": "#3b4a2b"
+  },
+  "dark_mode": true,
+  "decoration": {
+    "card_top_bar": true,
+    "description": "Left sidebar with section info",
+    "left_accent": true,
+    "name": "Sidebar Navigation",
+    "sidebar": true,
+    "title_underline": true
+  },
+  "image_effect": "soft_edge",
+  "layout_variant": {
+    "card_style": "rounded",
+    "content_margin_left": 0.9,
+    "content_margin_right": 0.9,
+    "description": "Standard left-aligned layout",
+    "name": "Standard",
+    "title_alignment": "left"
+  },
+  "name": "minimalism-swiss-style+sidebar-nav+standard",
+  "semantic_roles": {
+    "accent": "#c9a96e",
+    "accent-secondary": "#3b4a2b",
+    "background": "#131210",
+    "border": "#2b2a27",
+    "danger": "#b4543e",
+    "data-series-1": "#c9a96e",
+    "data-series-2": "#3b4a2b",
+    "ink": "#f1ece1",
+    "muted": "#9a9488",
+    "success": "#3b4a2b",
+    "surface": "#1b1a17",
+    "warning": "#c9a96e"
+  },
+  "source": {
+    "fallbacks": [],
+    "package_version": "1.0.0b11",
+    "requested": {
+      "decoration": null,
+      "fonts": null,
+      "image_effect": null,
+      "layout": null,
+      "mood": null,
+      "palette": null,
+      "query": null,
+      "seed": 7,
+      "style": "minimalism-swiss-style",
+      "text_effect_preset": null
+    },
+    "resolved": {
+      "decoration": "sidebar-nav",
+      "fonts": "modern-sans",
+      "layout": "standard",
+      "mood": [
+        "professional"
+      ],
+      "palette": "slate-minimal",
+      "style": "minimalism-swiss-style"
+    },
+    "resolver": "local",
+    "seed": 7,
+    "warnings": []
+  },
+  "text_effect_preset": "steel",
+  "typography": {
+    "body": "Montserrat",
+    "heading": "Cormorant Garamond"
+  }
+}

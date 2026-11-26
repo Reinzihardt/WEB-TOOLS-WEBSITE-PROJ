@@ -1,0 +1,21 @@
+version: 1
+status: LOCKED
+user_confirmed_at: "2026-11-26T14:20:00Z"
+visual_thesis: "Quiet editorial hospitality: ink-black and cream surfaces, one gold accent, hairline rules, oversized Cormorant Garamond headlines, Montserrat body at small sizes, photos carrying the color."
+audience_promise: "Panelists see a complete four-page HTML/CSS product with a coherent design system, real photography, and working CSS-only interaction."
+style_input: "Brand tokens copied from ForPresent/style.css; no template supplied; Build Mode from scratch."
+seed: 7
+intended_tokens:
+  palette: "ink #131210, ink-2 #1b1a17, stone #e9e4d8, cream #f7f3dc, light #f4f1e6, gold #c9a96e, olive #3b4a2b, text #f1ece1, admin paper #fffdf7, admin line #d9d3c4"
+  typography: "Cormorant Garamond 400/500 for display; Montserrat 300 body, 500/600 for labels; kickers 10px uppercase .22em"
+  decoration: "1px hairlines, no shadows, no decorative gradients, square corners, bordered K mark"
+  layout: "1200px max grid; 0.75in slide margins; dark and light surfaces alternating"
+visual_grammar: {}
+deck_rhythm: {}
+forbidden_patterns:
+  - "drop shadows"
+  - "decorative gradients"
+  - "rounded pill cards"
+  - "repeated identical card grids"
+resolved_theme_path: "ppt_tasks/keziah-group-deck/resolved-theme.json"
+resolved_theme_fingerprint: "357708a2b905d1835cdd46c01573bb6ed093e5dd723b8fdd57dd7ce7caa61904"

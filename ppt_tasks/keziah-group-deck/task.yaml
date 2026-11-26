@@ -1,0 +1,16 @@
+task_type: presentation
+title: "Keziah Group - Website Presentation (HTML and CSS)"
+language: "en"
+audience: "Panelists at a Web Tools presentation defense"
+scenario: "Group 4, section I-DCSAD, 11-slide design and process presentation with a live design demo"
+research_required: false
+research_question: ""
+generation_mode: Build
+direction_confirmation_required: false
+theme_lock_version: 1
+resolved_theme_path: "ppt_tasks/keziah-group-deck/resolved-theme.json"
+resolved_theme_fingerprint: "357708a2b905d1835cdd46c01573bb6ed093e5dd723b8fdd57dd7ce7caa61904"
+resolved_theme_seed: 7
+pptx_designer_version: "1.0.0b11"
+pptx_designer_module_path: "C:/Users/renzb/AppData/Roaming/Python/Python315/site-packages/pptx_designer"
+status: DELIVERED
